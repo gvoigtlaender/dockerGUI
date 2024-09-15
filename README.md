@@ -9,7 +9,6 @@ Feel free to adjust
 # Warning
 ## The container has access to the users home directory of host! 
 Tools might write to host profiles!
-It uses thunar file manager and epiphany browser - change if you need!
 
 ### Open Issues
 * Warning 'Failed to load module "canberra-gtk-module" '. Installing libcanberra-packages did not help. See *Dockerfile*
