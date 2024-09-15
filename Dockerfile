@@ -11,7 +11,7 @@ RUN useradd -u $UID -g $GID -m $UNAME
 
 # update installation and install some requirements
 RUN apt update
-RUN apt install -y fuse libfuse2 libgl1 libegl1 locales fontconfig wget xdg-utils epiphany thunar
+RUN apt install -y fuse libfuse2 libgl1 libegl1 locales fontconfig wget xdg-utils thunar mousepad
 
 # update locales
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen &&  locale-gen

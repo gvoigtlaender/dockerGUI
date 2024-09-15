@@ -3,7 +3,8 @@ USER=$(whoami)
 UID=$(id -u)
 GID=$(id -g)
 APP=$(ls UltiMaker-Cura*.AppImage)
-xhost +
+chmod +x $APP
+xhost +local:
 docker run \
 	-v $(pwd):/opt \
 	--rm -it \
